@@ -7,31 +7,30 @@
   font-size: 15px;
   font-family: "Lexend Deca";
   box-sizing: border-box;
+}
+html {
   overflow-x: hidden;
 }
-.Main-Container > * {
-  overflow-y: hidden;
-}
-
 .Main-Container {
   display: flex;
   width: 100vw;
   height: 150vh;
-  display: flex;
   background-color: white;
+  justify-items: center;
   align-items: center;
   justify-content: center;
 }
 
 .Card {
-  overflow-y: hidden;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  align-self: center;
+  margin-top: 90%;
   height: 1400px;
   width: 300px;
   background-color: red;
   border-radius: 5px;
+  align-items: end;
   overflow: hidden;
 }
 .Orange {
@@ -71,7 +70,6 @@
   color: white;
 }
 .Description {
-  overflow-y: hidden;
   padding: 20px 40px 50px 50px;
   font-size: 17px;
   opacity: 0.7;
@@ -120,6 +118,40 @@
             BREAKPOINTS
    |||||||||||||||||||||||||||||||||||
  */
+@media (max-height: 530px) {
+  .Main-Container {
+    display: flex;
+    width: 100vw;
+    height: 300vh;
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .Card {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 1500px;
+    height: 2000px;
+    width: 300px;
+    background-color: red;
+    border-radius: 5px;
+    align-items: end;
+    overflow: hidden;
+  }
+}
+@media (max-height: 710px) {
+  .Main-Container {
+    display: flex;
+    width: 100vw;
+    height: 200vh;
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 @media (min-width: 1440px) {
   html {
