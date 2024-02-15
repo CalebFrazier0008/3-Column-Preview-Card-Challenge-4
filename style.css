@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px;
+  font-family: "Lexend Deca";
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.Main-Container > * {
+  overflow-y: hidden;
+}
+
+.Main-Container {
+  display: flex;
+  width: 100vw;
+  height: 150vh;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.Card {
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  height: 1400px;
+  width: 300px;
+  background-color: red;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.Orange {
+  display: flex;
+  flex-direction: column;
+  height: 33%;
+  width: 100%;
+  background-color: hsl(31, 77%, 52%);
+}
+.Cyan {
+  display: flex;
+  flex-direction: column;
+  height: 33%;
+  width: 100%;
+  background-color: hsl(184, 100%, 22%);
+}
+.Dark-Cyan {
+  display: flex;
+  flex-direction: column;
+  height: 34%;
+  width: 100%;
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* |||||||||||||||||||||||||||||||||||
+            SVG CARS STYLES
+   |||||||||||||||||||||||||||||||||||
+ */
+.Car {
+  margin: 50px 50px 30px 50px;
+}
+.Car-name {
+  font-family: "Big Shoulders Display", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  padding-left: 50px;
+  color: white;
+}
+.Description {
+  overflow-y: hidden;
+  padding: 20px 40px 50px 50px;
+  font-size: 17px;
+  opacity: 0.7;
+  color: white;
+  text-align: start;
+  text-wrap: wrap;
+}
+.Learn-more {
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  width: 150px;
+  height: 45px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.Orange button {
+  color: hsl(31, 77%, 52%);
+}
+.Orange button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.Cyan button {
+  color: hsl(184, 100%, 22%);
+}
+.Cyan button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.Dark-Cyan button {
+  color: hsl(179, 100%, 13%);
+}
+.Dark-Cyan button:hover {
+  background-color: hsl(179, 100%, 13%);
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+}
+/* |||||||||||||||||||||||||||||||||||
+            BREAKPOINTS
+   |||||||||||||||||||||||||||||||||||
+ */
+
+@media (min-width: 1440px) {
+  html {
+    overflow-y: hidden;
+  }
+  .Main-Container {
+    align-items: start;
+    justify-content: center;
+    height: 1200px;
+    padding: 100px;
+  }
+
+  .Card {
+    flex-direction: row;
+    margin-top: 0px;
+    height: 600px;
+    width: 90vw;
+  }
+  .Orange {
+    height: 100%;
+    width: 33%;
+  }
+  .Cyan {
+    height: 100%;
+    width: 34%;
+  }
+  .Dark-Cyan {
+    height: 100%;
+    width: 33%;
+  }
+  .Learn-more {
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    width: 200px;
+    height: 60px;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+  .Description {
+    padding: 40px 40px 50px 50px;
+    font-size: 24px;
+    opacity: 0.7;
+    color: white;
+    text-align: left;
+    text-wrap: wrap;
+  }
+}
